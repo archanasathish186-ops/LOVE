@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Memories ❤️</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="gallery-page">
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Memories ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="gallery-page">
+
+   <body class="story">
+    
+
+<h1>❤️ Our Beautiful Memories ❤️</h1>
+
+<div class="slideshow-container">
+    <img id="slide" src="images/pic1.png" alt="Our Memory">
+</div>
+
+<h2>Forever & Always ❤️</h2>
+
+<br>
+
+<a href="celebration.html" class="btn">
+    NEXT❤️
+</a>
+
+<script>
+
+    const photos = [
+        "images/pic1.png",
+        "images/pic2.png",
+        "images/pic3.png",
+        "images/pic4.png",
+        "images/pic5.png"
+    ];
+
+    let current = 0;
+
+    setInterval(() => {
+
+        current++;
+
+        if (current >= photos.length) {
+            current = 0;
+        }
+
+        document.getElementById("slide").src = photos[current];
+
+    }, 3000);
+
+</script>
+```
+
+</body>
+</html>

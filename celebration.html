@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy 1st Anniversary ❤️</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    overflow-x:hidden;
+    overflow-y:scroll;
+    text-align:center;
+    color:white;
+    background:linear-gradient(135deg,#4a0000,#8b0000,#c2185b,#ff4d6d);
+    min-height:100vh;
+}
+
+/* MAIN CONTENT */
+
+.container{
+position:relative;
+z-index:10;
+padding-top:40px;
+}
+
+h1{
+font-size:65px;
+text-shadow:0 0 30px white;
+margin-bottom:20px;
+}
+
+.subtitle{
+font-size:35px;
+margin-bottom:20px;
+}
+
+.quote{
+font-size:24px;
+max-width:800px;
+margin:auto;
+padding:20px;
+line-height:1.8;
+}
+
+.counter{
+font-size:32px;
+font-weight:bold;
+margin:20px 0;
+color:#ffe082;
+}
+
+/* PHOTO */
+
+.couple-photo img{
+width:220px;
+height:220px;
+object-fit:cover;
+border-radius:50%;
+border:8px solid gold;
+box-shadow:0 0 40px gold;
+}
+
+/* CAKE */
+
+.cake{
+font-size:130px;
+animation:bounce 2s infinite;
+margin:15px 0;
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:18px 45px;
+background:gold;
+color:#7a001f;
+text-decoration:none;
+font-weight:bold;
+font-size:20px;
+border-radius:50px;
+box-shadow:0 0 25px gold;
+transition:.4s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+/* BALLOONS */
+
+.balloon{
+position:absolute;
+bottom:-150px;
+font-size:70px;
+animation:fly linear infinite;
+}
+
+.b1{left:5%;animation-duration:8s;}
+.b2{left:20%;animation-duration:10s;}
+.b3{left:35%;animation-duration:7s;}
+.b4{left:55%;animation-duration:9s;}
+.b5{left:75%;animation-duration:11s;}
+.b6{left:90%;animation-duration:8s;}
+
+/* HEARTS */
+
+.heart{
+position:absolute;
+bottom:-100px;
+font-size:30px;
+animation:heartFly linear infinite;
+}
+
+.h1{left:15%;animation-duration:8s;}
+.h2{left:30%;animation-duration:10s;}
+.h3{left:50%;animation-duration:7s;}
+.h4{left:70%;animation-duration:9s;}
+.h5{left:85%;animation-duration:8s;}
+
+/* ROSES */
+
+.rose{
+position:absolute;
+top:-50px;
+font-size:35px;
+animation:fall linear infinite;
+}
+
+.r1{left:10%;animation-duration:8s;}
+.r2{left:25%;animation-duration:10s;}
+.r3{left:40%;animation-duration:7s;}
+.r4{left:60%;animation-duration:9s;}
+.r5{left:80%;animation-duration:11s;}
+.r6{left:95%;animation-duration:8s;}
+
+/* CONFETTI */
+
+.confetti{
+position:absolute;
+width:100%;
+top:20px;
+font-size:40px;
+animation:blink 1s infinite;
+}
+
+/* ANIMATIONS */
+
+@keyframes fly{
+from{transform:translateY(0);}
+to{transform:translateY(-120vh);}
+}
+
+@keyframes heartFly{
+from{
+transform:translateY(0);
+opacity:1;
+}
+to{
+transform:translateY(-120vh);
+opacity:0;
+}
+}
+
+@keyframes fall{
+from{transform:translateY(-50px);}
+to{transform:translateY(120vh);}
+}
+
+@keyframes bounce{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-20px);}
+}
+
+@keyframes blink{
+50%{
+opacity:.4;
+}
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+h1{
+font-size:40px;
+}
+
+.subtitle{
+font-size:24px;
+}
+
+.quote{
+font-size:18px;
+padding:15px;
+}
+
+.couple-photo img{
+width:170px;
+height:170px;
+}
+
+.cake{
+font-size:90px;
+}
+
+.counter{
+font-size:22px;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+
+<div class="confetti">
+🎉 ✨ 🎊 ❤️ 🎉 ✨ 🎊 ❤️ 🎉
+</div>
+
+<div class="balloon b1">🎈</div>
+<div class="balloon b2">🎈</div>
+<div class="balloon b3">🎈</div>
+<div class="balloon b4">🎈</div>
+<div class="balloon b5">🎈</div>
+<div class="balloon b6">🎈</div>
+
+<div class="heart h1">❤️</div>
+<div class="heart h2">❤️</div>
+<div class="heart h3">❤️</div>
+<div class="heart h4">❤️</div>
+<div class="heart h5">❤️</div>
+
+<div class="rose r1">🌹</div>
+<div class="rose r2">🌹</div>
+<div class="rose r3">🌹</div>
+<div class="rose r4">🌹</div>
+<div class="rose r5">🌹</div>
+<div class="rose r6">🌹</div>
+
+<div class="container">
+
+<div class="couple-photo">
+<img src="images/pic1.png" alt="Our Photo">
+</div>
+
+<h1>❤️ Happy 1st Anniversary ❤️</h1>
+
+<div class="cake">🎂</div>
+
+<h2 class="subtitle">
+To The Love Of My Life ❤️
+</h2>
+
+<div class="counter">
+365 Days Of Love ❤️
+</div>
+
+<p class="quote">
+Another beautiful year,
+another beautiful memory,
+another reason to love you even more. ❤️
+</p>
+
+
+
+<a href="question.html" class="btn">
+NEXT❤️
+</a>
+
+</div>
+
+</body>
+</html>

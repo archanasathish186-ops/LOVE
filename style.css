@@ -1,0 +1,304 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Segoe UI',sans-serif;
+color:white;
+text-align:center;
+;
+}
+
+/* HOME PAGE */
+
+.home{
+background:
+linear-gradient(rgba(90,0,0,.75),rgba(90,0,0,.75)),
+url("https://images.unsplash.com/photo-1518895949257-7621c3c786d7");
+background-size:cover;
+background-position:center;
+height:100vh;
+}
+
+.overlay{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+animation:fadeIn 2s;
+}
+
+h1{
+font-size:65px;
+text-shadow:0 0 25px #ff3366;
+margin-bottom:15px;
+}
+
+h2{
+font-size:38px;
+margin-bottom:20px;
+}
+
+.days{
+font-size:25px;
+letter-spacing:2px;
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 40px;
+background:white;
+color:#b3003c;
+text-decoration:none;
+border-radius:50px;
+font-weight:bold;
+transition:.4s;
+box-shadow:0 0 20px rgba(255,255,255,.4);
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+/* STORY PAGE */
+
+.story{
+background:
+linear-gradient(rgba(70,0,0,.85),rgba(70,0,0,.85)),
+url("https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2");
+background-size:cover;
+background-attachment:fixed;
+}
+
+.letter{
+max-width:900px;
+margin:auto;
+padding:50px 30px;
+line-height:2;
+font-size:22px;
+animation:fadeIn 2s;
+}
+
+.letter p{
+background:rgba(255,255,255,.08);
+padding:30px;
+border-radius:20px;
+backdrop-filter:blur(5px);
+}
+
+/* GALLERY PAGE */
+
+.gallery-page{
+background:
+linear-gradient(rgba(80,0,0,.8),rgba(80,0,0,.8)),
+url("https://images.unsplash.com/photo-1518199266791-5375a83190b7");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+}
+
+/* SLIDESHOW */
+
+.slideshow-container{
+display:flex;
+justify-content:center;
+margin-top:40px;
+padding:20px;
+}
+
+#slide{
+width:350px;
+height:500px;
+object-fit:cover;
+border-radius:25px;
+border:5px solid white;
+box-shadow:
+0 0 20px rgba(255,255,255,.5),
+0 0 40px rgba(255,100,100,.5);
+
+animation:photoReveal 1.5s;
+
+}
+
+/* ANIMATIONS */
+
+@keyframes photoReveal{
+from{
+opacity:0;
+transform:scale(.85);
+filter:blur(10px);
+}
+
+to{
+    opacity:1;
+    transform:scale(1);
+    filter:blur(0);
+}
+
+
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+h1{
+    font-size:40px;
+}
+
+h2{
+    font-size:25px;
+}
+
+.days{
+    font-size:18px;
+}
+
+.letter{
+    font-size:18px;
+    padding:25px 15px;
+}
+
+#slide{
+    width:260px;
+    height:360px;
+}
+
+
+}
+
+/* CELEBRATION PAGE */
+
+.celebration{
+    background:linear-gradient(
+    135deg,
+    #7a001f,
+    #b3003c,
+    #ff4d6d);
+
+    min-height:100vh;
+    overflow:hidden;
+    position:relative;
+}
+
+.celebration-box{
+    position:relative;
+    z-index:10;
+    padding-top:120px;
+}
+
+.cake{
+    font-size:120px;
+    animation:bounce 2s infinite;
+}
+
+.party-left{
+    position:absolute;
+    left:20px;
+    top:120px;
+    font-size:50px;
+    animation:pop 1s infinite;
+}
+
+.party-right{
+    position:absolute;
+    right:20px;
+    top:120px;
+    font-size:50px;
+    animation:pop 1s infinite;
+}
+
+.balloon{
+    width:70px;
+    height:90px;
+    background:red;
+    border-radius:50%;
+    position:absolute;
+    bottom:-120px;
+}
+
+.balloon::after{
+    content:"";
+    position:absolute;
+    width:2px;
+    height:80px;
+    background:white;
+    left:50%;
+    top:90px;
+}
+
+.balloon1{
+    left:10%;
+    animation:fly 8s linear infinite;
+}
+
+.balloon2{
+    left:30%;
+    animation:fly 10s linear infinite;
+}
+
+.balloon3{
+    left:50%;
+    animation:fly 7s linear infinite;
+}
+
+.balloon4{
+    left:70%;
+    animation:fly 9s linear infinite;
+}
+
+.balloon5{
+    left:90%;
+    animation:fly 11s linear infinite;
+}
+
+@keyframes fly{
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(-120vh);
+    }
+}
+
+@keyframes bounce{
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-20px);
+    }
+}
+
+@keyframes pop{
+    0%,100%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.3);
+    }
+}
